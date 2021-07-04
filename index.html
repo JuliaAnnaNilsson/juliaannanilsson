@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Några saker som kan vara bra innan du börjar
+      är att veta två saker med det här dokumentet. 
+      
+      Du kommer att märka att vi använder en klass som heter container på alla sektioner 
+      på den här sidan. Den styr själva grundstrukturen, dvs hur 
+      bred varje sektion är, hur texten ska vara formaterad och sånt som är samma på alla 
+      sektioner. 
+      
+      En annan nyhet är att vi använder en bakgrundsbild till toppen på sidan, det är ett 
+      vanligt sätt när man vill ha text ovanpå en bild. Det som är lite annorlunda att denna 
+      läggs in i CSS dokumentet och inte i html filen, precis som om du hade gjort en bakgrundsfärg 
+      – så kika efter background-image så hittar du den där. 
+
+      Lycka till! -->
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+  <!--En font som vi denna gång hämtar från google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">    
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <title>JuliaAnnaNilsson</title>
+</head>
+
+      <body>
+            
+            <!-- Här finns all html kod som har med toppen på sidan att göra, 
+            - kom ihåg att du hittar bilden i css dokumentet -->
+
+            <header>
+                  <div class="containerheader">
+                        <h1>"I've never tried this before so I can do it for sure." </h1> 
+                        <p>- Me and Pippi Longstocking</p>
+                  </div>
+            </header>
+
+            <!-- Här finns all html kod som har med dom tre iconerna att göra -->
+
+            <section class="what-we-do">
+
+                  <div class="great-things">
+                        <h2>Some of the great things I do</h2>
+                  </div>
+
+                  <div class="container">  
+
+                        <div class="icons">
+                              <div class="icon">
+                                    <a href="makerspace.html"><img src="./images/makerspace.png"></a>
+                                    <h3>Makerspace</h3>
+                                    <p>Click on the makerspace icon to check some things I have done.</p>
+                              </div>
+
+                              <div class="icon">
+                                    <img src="./images/3dprint.png">
+                                    <h3>3D-printing</h3>
+                                    <p>Contact me if you have something that you want to print in my 3D-printer.</p>
+                              </div>
+
+                              <div class="icon">
+                                    <img src="./images/workshop.png">
+                                    <h3>Workshops</h3>
+                                    <p>
+                                          <li>Arduino</li>
+                                          <li>Wearables</li>
+                                          <li>Build website</li>
+                                          <li>And more</li>
+                                    </p>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Här finns all html kod som har med om oss sektionen att göra -->
+
+            <section class="about-us">
+                  <div class="container">
+                        <h2>About me</h2>
+                        <p>My great interest as a "maker" is in connecting software with hardware.
+                              It is the curiosity for new knowledge that drives me to try new things and start new projects.
+                              I am also part of the national network MakerTjej which works to get more young girls into the maker culture.
+                              Participated as a representative of MakerTjej during the Tekla Festival 2016 where we conducted MakerTjej's workshop "Digibling" (Creation of digital jewelry).
+                        </p>
+                  </div>
+            </section>
+
+            <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+            <footer>
+                  <div class="container">
+                        <h2>Contact</h2>
+                        <a class="button" href="https://www.linkedin.com/in/julia-nilsson-4540544b/">Say hi on Linkedin</a>
+      
+                        <a class="button" href="https://www.instagram.com/juliaannanilsson/">Say hi on my personal Instagram</a>
+            
+                        <a class="button" href="https://www.instagram.com/enjoj.the.van/">Say hi on my vanlife Instagram</a>
+                  </div>
+            </footer>
+
+      </body>
+
+</html>

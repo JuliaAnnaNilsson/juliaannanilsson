@@ -1,0 +1,176 @@
+/* Här är styling som gäller för hela sidan */
+body {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Här är styling som gäller för toppen på sidan */
+header {
+    background-color: #3bc2a0;
+    padding: 50px 30px;
+    color: white;
+    text-align: center;
+}
+  
+footer {
+    background-color: #3bc2a0;
+    padding: 100px 30px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+.technical {
+    background-color: #3bc2a0bb;
+    padding: 50px 30px;
+    color: white;
+    text-align: left;
+}
+  
+.other {
+    background-color: #3bc2a093;
+    padding: 50px 30px;
+    color: white;
+    text-align: left;
+}
+  
+  /* Styling för texter och länkar */
+
+/* Här är styling som gäller för rubriker och text */
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+a {
+    color: #030303;
+}
+  
+/* Styling för alla produkter – dessa är children till
+sektionen med klassnamnet all-products */
+.product_tech {
+    border: solid #3bc2a0bb 0.5px;
+    margin: 10px;
+    padding: 30px;
+    width: 25%;
+}
+  
+.product_other {
+    border: solid #3bc2a093 0.5px;
+    margin: 10px;
+    padding: 30px;
+    width: 25%;
+    position: relative;
+}
+  
+.product img {
+    width: 100%;
+}
+  
+/* Här finns all styling för knappen */
+.button {
+    background-color: white;
+    color: #3bc2a0;
+    padding: 25px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.start {
+    text-align: left;
+    margin-bottom: 30px;
+}
+  
+p.contact {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+/* Sektionen .all-products är parent till div-arna med
+  klassnamn .product. Den styr därmed hur alla produkterna
+  ska vara placerade.
+  Hint! Googla "flex-wrap".*/
+  
+.technical-products {
+    display:flex;
+    flex-wrap: wrap;
+}
+  
+.non-technical-products {
+    display:flex;
+    flex-wrap: wrap;
+}
+  
+/*Play with hover and overlay*/
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3bc2a0;
+}
+  
+.product_other:hover .overlay {
+    opacity: 0.5;
+}
+
+.product_other:hover {
+    opacity: 0.5;
+  }
+
+.text {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Styling för footern på sidan */
+footer {
+    background-color: #3bc2a0;
+    color: white;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
